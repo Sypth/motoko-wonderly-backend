@@ -5,20 +5,15 @@
       "type": "motoko"
     },
     "motoko_backend_frontend": {
-      "dependencies": [
-        "motoko_backend_backend"
-      ],
-      "source": [
-        "src/motoko_backend_frontend/dist"
-      ],
+      "dependencies": ["motoko_backend_backend"],
+      "source": ["src/motoko_backend_frontend/dist"],
       "type": "assets",
       "workspace": "motoko_backend_frontend"
     }
   },
   "defaults": {
     "build": {
-      "args": "",
-      "packtool": ""
+      "packtool": "mops sources"
     }
   },
   "output_env_file": ".env",
